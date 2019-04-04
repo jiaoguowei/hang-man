@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .win{
+      width: 300px;
+      height: 500px;
+      /* animation: myanimat 2s; */
+    }
+    .win img {
+      width: 100%;
+    }
+    .head{
+      width: 100px;
+      height: 150px;
+      perspective: 3000;
+      transform-origin: center bottom;
+      /* animation: yaotou 1s ease-in-out infinite forwards; */
+      /* animation-fill-mode: forwards; */
+    }
+    .head img {
+      width: 100%;
+    }
+    .heart {
+      width: 50px;
+      height: 50px;
+      /* animation: heart 2s; */
+      animation-fill-mode: forwards;
+    }
+    .heart img {
+      width: 100%;
+    }
+    .nohandLeft {
+      width: 100px;
+      height: 200px;
+      animation: nohandLeft 1s ease-in-out;
+      transform-origin: center bottom;
+    }
+    .nohandLeft img {
+      width: 100%;
+    } 
+    @keyframes nohandLeft{
+      from {
+        transform: rotateX(0deg)
+      }
+      to {
+        transform: rotateX(30deg)
+      }
+    }
+    @keyframes heart{
+      0% {
+        transform: scale(1.5, 1.5)
+      }
+      50% {
+        transform: scale(1， 1) translate(100px, -100px)
+      }
+
+      100% {
+        transform: scale(0, 0) translate(200px, -200px)
+      }
+    }
+    @keyframes yaotou {
+      0% {
+        transform: rotateZ(-25deg)
+      }
+      50% {
+        transform: scale(1.2, 1.2)
+      }
+
+      100% {
+        transform: rotateZ(25deg) 
+      }
+    }
+    @keyframes myanimat{
+      from {
+        /* width: 200px;
+        height: 300px; */
+        transform: scale()
+        /* transform: rotateY(30deg) */
+      }
+      to {
+        /* transform: rotateY(-30deg) */
+        transform: scale(2, 2)
+        /* width: 400px;
+        height: 600px; */
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="head">
+        <img src="./images/loserHead.png" alt="">
+      </div>
+    <div class="heart">
+      <img src="./images/winDear.png" alt="">
+    </div>
+    <div class="nohandLeft"> 
+      <img src="./images/nohandLeft.png" alt="">
+    </div>
+  <div class="win">
+    <img src="./images/win.png" alt="">
+  </div>
+  <div class="loser">
+    <img src="./images/loser.png" alt="">
+  </div>
+  <div class="no">
+    <img src="./images/no.png" alt="">
+  </div>
+  <div class="yes">
+    <img src="./images/yes.png" alt="">
+  </div>
+  
+</body>
+</html>
